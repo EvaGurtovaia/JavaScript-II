@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-let car =
+function sayHello(greetings) {
+  const beFriendly = greetings;
+  console.log(`${beFriendly} How are you? `);
+}
+sayHello("Good morning everybody!");
+
+function sayName(name) {
+  const firstName = name;
+  console.log(`My name is ${firstName}`);
+}
+sayName ("Eva");
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
