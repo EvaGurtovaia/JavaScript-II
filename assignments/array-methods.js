@@ -90,12 +90,16 @@ console.log(ticketPriceTotal);
 
 // Problem 1. Sponsors want us to capatilize companies' names.
 console.log(runners.map(runner => runner.company_name.toUpperCase()));
-// Problem 2
+// Problem 2. Runner.last_name.startsWith('A') or ('B')));
 let lastNames = [];
  runners.filter(runner => {if (runner.last_name.startsWith ('A') 
 || runner.last_name.startsWith ('B')) {lastNames.push(runner)}});
 console.log(lastNames);
  
-//runner.last_name.startsWith('A')));
 
-// Problem 3
+
+// Problem 3. Create a new list that contains names of companies that made donations less then 50$
+let smallDonations = [];
+runners.filter(runner => {if (runner.donation < 50) 
+    {smallDonations.push(runner.company_name)}});
+    console.log(smallDonations);
